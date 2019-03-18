@@ -7,7 +7,7 @@
 
   <!-- Sidebar -->
   <div class="bg-light border-right" id="sidebar-wrapper">
-    <!-- <div class="sidebar-heading">Menu</div> -->
+    <div class="sidebar-heading">Menu</div>
     <div class="list-group list-group-flush">
       <a [routerLink]="['/']" class="list-group-item list-group-item-action bg-light">Elemento 1</a>
       <a [routerLink]="['/']" class="list-group-item list-group-item-action bg-light">Elemento 2</a>
@@ -31,23 +31,106 @@
 
 <!-- Modal -->
 <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Llamada en curso</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-       <div class="row">
-         <div class="col-sm-12 col-md-6 col-lg-6 div-detalles">Detalles</div>
-         <div class="col-sm-12 col-md-6 col-lg-6 div-form-operadora">Form operadora</div>
+       <div class="row grid-divider">
+         <div class="col-sm-12 col-md-6 col-lg-6 div-detalles">
+
+              <div class="row">
+                <h5>Detalles del cliente:</h5>
+                <div class="col-sm-6 list-group">
+                  <span>Nombre:</span>
+                  <span>Apellidos:</span>
+                  <span>Email:</span>
+                  <span>Proyecto:</span>
+                  <span>Prioridad:</span>
+                  <span>Medio:</span>
+                  <span>Ingreso:</span>
+                </div>
+                <div class="col-sm-6 list-group">
+                  <span>Gerard</span>
+                  <span>Altamirano</span>
+                  <span>gerard@email.uk</span>
+                  <span>Nueva Lima</span>
+                  <span>70%</span>
+                  <span>Urbania</span>
+                  <span>27-02-2019</span>
+                </div>
+              </div>
+          </div>
+          <div class="vertical-divider"></div>  
+         <div class="col-sm-12 col-md-6 col-lg-6 div-form-operadora-ctn">
+           <div class="div-form-operadora">
+            <div class="row">
+              <div class="col-md-6">
+                <span class="form-date">16-03-19</span>
+              </div>
+              <div class="col-md-6">
+                <span class="form-time float-right">00:00</span>
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="form-question-group row">
+
+                
+                <div class="col-md-6">
+                  <span class="form-qst">Llamada contestada:</span>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="answeredCall" id="callRadio1" value="option1">
+                    <label class="form-check-label" for="callRadio1">SI</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="answeredCall" id="callRadio2" value="option2">
+                    <label class="form-check-label" for="callRadio2">NO</label>
+                  </div>
+                </div>
+                
+              </div>
+                
+                <div class="form-question-group row">
+
+                  <div class="col-md-6">
+                    <label for="rooms" class="form-qst">Habitaciones:</label>
+                  </div>
+                  <div class="col-md-6">
+                    <select class="custom-select-sm form-control-sm" name="rooms">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                  
+                </div>
+
+                <div class="form-question-group row">
+
+                    <div class="col-md-6">
+                      <label for="aditionalContact" class="form-qst">Contacto adicional:</label>
+                    </div>
+                    <div class="col-md-6">
+                     <input type="text" class="form-control " name="aditionalContact" placeholder="Opcional" >
+                    </div>
+                    
+                  </div>
+
+            </div>
+            </div>
+          </div>
        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button> -->
+        <button type="button" class="btn btn-primary">Guardar</button>
       </div>
     </div>
   </div>
