@@ -62,7 +62,7 @@
     }
   }
 
-  .div-detalles{
+  .div-detalles, div.div-detalles, div.resolve-call{
     padding: 0 7%;
   }
 
@@ -80,6 +80,16 @@
  }
 
 
+
+ .form-qst, .form-awr{
+  padding: 5%;
+ }
+
+ .form-qst{
+
+    margin: 7% auto;
+
+ }
 
 
   /* Divider */

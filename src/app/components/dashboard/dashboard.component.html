@@ -45,7 +45,7 @@
 
               <div class="row">
                 <h5>Detalles del cliente:</h5>
-                <div class="col-sm-6 list-group">
+                <div class="col-sm-12  col-md-6 list-group">
                   <span>Nombre:</span>
                   <span>Apellidos:</span>
                   <span>Email:</span>
@@ -54,7 +54,7 @@
                   <span>Medio:</span>
                   <span>Ingreso:</span>
                 </div>
-                <div class="col-sm-6 list-group">
+                <div class="col-sm-12 col-md-6 list-group">
                   <span>Gerard</span>
                   <span>Altamirano</span>
                   <span>gerard@email.uk</span>
@@ -84,7 +84,7 @@
                 <div class="col-md-6">
                   <span class="form-qst">Llamada contestada:</span>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 form-awr">
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="answeredCall" id="callRadio1" value="option1">
                     <label class="form-check-label" for="callRadio1">SI</label>
@@ -96,29 +96,85 @@
                 </div>
                 
               </div>
-                
-                <div class="form-question-group row">
-
-                  <div class="col-md-6">
-                    <label for="rooms" class="form-qst">Habitaciones:</label>
-                  </div>
-                  <div class="col-md-6">
-                    <select class="custom-select-sm form-control-sm" name="rooms">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div>
+                <div class="resolve-call row">
                   
-                </div>
+                
+              <div class="form-question-group row">
 
+                <div class="col-md-6">
+                  <label for="rooms" class="form-qst">Habitaciones:</label>
+                </div>
+                <div class="col-md-6 form-awr">
+                  <select class="custom-select-sm form-control-sm" name="rooms">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                
+              </div>
+
+              <div class="form-question-group row">
+
+                <div class="col-md-6">
+                  <label for="rooms" class="form-qst">Planta:</label>
+                </div>
+                <div class="col-md-6 form-awr">
+                  <select class="custom-select-sm form-control-sm" name="floor">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                
+              </div>
+              
                 <div class="form-question-group row">
 
                     <div class="col-md-6">
                       <label for="aditionalContact" class="form-qst">Contacto adicional:</label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 form-awr">
                      <input type="text" class="form-control " name="aditionalContact" placeholder="Opcional" >
+                    </div>
+                    
+                  </div>
+                  </div>
+
+                  <div class="form-question-group row">
+
+                
+                    <div class="col-md-6">
+                      <span class="form-qst">Agenda visita:</span>
+                    </div>
+                    <div class="col-md-6 form-awr">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="visit" id="visitRadio1" value="option1">
+                        <label class="form-check-label" for="callRadio1">SI</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="visit" id="visitRadio2" value="option2">
+                        <label class="form-check-label" for="callRadio2">NO</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="form-question-group row">
+
+                
+                    <div class="col-md-6">
+                      <span class="form-qst">Separa:</span>
+                    </div>
+                    <div class="col-md-6 form-awr">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="saveDep" id="saveDepRadio1" value="option1">
+                        <label class="form-check-label" for="callRadio1">SI</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="saveDep" id="saveDepRadio2" value="option2">
+                        <label class="form-check-label" for="callRadio2">NO</label>
+                      </div>
                     </div>
                     
                   </div>
